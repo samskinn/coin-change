@@ -14,7 +14,7 @@ public class Solution {
             combinations[0] = 1;
         
             for(int coin: coins){
-                for(int i =1; i < combinations.length; i++) {
+                for(int i = 1; i < combinations.length; i++) {
                     if(i >= coin){
                         combinations[i] += combinations[i - coin];
                     }
